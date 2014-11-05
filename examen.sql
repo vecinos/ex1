@@ -1,8 +1,9 @@
-﻿/*
+/*
 SQLyog Ultimate v8.61 
-MySQL - 5.1.41 : Database - proyecto
+MySQL - 5.1.41 : Database - proyecto1
 *********************************************************************
-*/
+*/
+
 /*!40101 SET NAMES utf8 */;
 
 /*!40101 SET SQL_MODE=''*/;
@@ -99,7 +100,7 @@ CREATE TABLE `preguntas` (
 
 /*Data for the table `preguntas` */
 
-insert  into `preguntas`(`id_preg`,`pregunta`,`respuesta`,`estado`) values (1,'cuanto es : 4 x 9','36',0),(7,'cuanto es : 6 x 8','48',0),(3,'cuanto es : 8 x 4','32',0),(4,'cuanto es : 6 x 7','42',1),(5,'cuanto es : 7 x 7','49',0),(6,'cuanto es : 9 x 5','45',0),(8,'cuanto es : 79 - 37','42',0),(9,'cuanto es : 150 - 101','49',0),(10,'cuanto es : 236 - 191','45',0),(2,'cuanto es : 7 x 5','35',0);
+insert  into `preguntas`(`id_preg`,`pregunta`,`respuesta`,`estado`) values (1,'cuantos cuatrimestres tiene tsu','4',0),(7,'cuantas materias tiene tsu ','6',0),(3,'a que hora se imparte la ingenieria','5',0),(4,'cuantos digitos contiene un celular','10',0),(5,'cuanto es : 7 x 7','49',0),(6,'cuanto es : 9 x 5','45',0),(8,'cuanto es : 79 - 37','42',0),(9,'qur promedio se nesita para titularse ','9',0),(10,'cuanto es : 236 - 191','45',0),(2,'calificasion minima aprovatoria','8',0);
 
 /*Table structure for table `solucion` */
 
@@ -125,7 +126,7 @@ CREATE TABLE `solucion` (
 
 /*Data for the table `solucion` */
 
-insert  into `solucion`(`id_solucion`,`id`,`ac1`,`ac2`,`ac3`,`ac4`,`ac5`,`ac6`,`ac7`,`ac8`,`ac9`,`ac10`) values (58,8,0,1,1,0,0,1,0,1,0,0);
+insert  into `solucion`(`id_solucion`,`id`,`ac1`,`ac2`,`ac3`,`ac4`,`ac5`,`ac6`,`ac7`,`ac8`,`ac9`,`ac10`) values (58,8,1,0,0,1,0,0,0,0,1,0);
 
 /*Table structure for table `usuario` */
 
@@ -154,7 +155,7 @@ CREATE TABLE `usuario` (
 
 /*Data for the table `usuario` */
 
-insert  into `usuario`(`id`,`Nombre`,`ApellidoPaterno`,`ApellidoMaterno`,`Telefono`,`Calle`,`NumeroExterior`,`NumeroInterior`,`Colonia`,`Municipio`,`Estado`,`CP`,`Correo`,`Usuario`,`Contrasena`,`Nivel`,`Estatus`) values (1,'pedro','Almendaris','morales','','','','','','','','','','jose','1234','3','1'),(2,'jose','perez','leon','','','','','','','','','','','','3','1'),(3,'ana','hernandez','morales','','','','','','','','','','','','3','1'),(4,'pedro','jimenez','garcia','','','','','','','','','','','','2','1'),(5,'jose','apolinar','peña','','','','','','','','','','','','2','1'),(6,'raul','granda','morales','','','','','','','','','','','','2','1'),(7,'rosa','hernandez','jimenez','','','','','','','','','','','','2','1'),(8,'luis alberto','rodriguez','hernandez','','','','','','','','','','alberto','123','1','1'),(9,'sagid','hernandez','lopez','','','','','','','','','','','','2','1'),(10,'alberto','garcia','nava','','','','','','','','','','','','2','1');
+insert  into `usuario`(`id`,`Nombre`,`ApellidoPaterno`,`ApellidoMaterno`,`Telefono`,`Calle`,`NumeroExterior`,`NumeroInterior`,`Colonia`,`Municipio`,`Estado`,`CP`,`Correo`,`Usuario`,`Contrasena`,`Nivel`,`Estatus`) values (2,'pedro','perez','leon','','','','','','','','','','','','3','1'),(3,'ana','hernandez','morales','','','','','','','','','','','','3','1'),(4,'pedro','jimenez','garcia','','','','','','','','','','','','2','1'),(5,'jose','apolinar','peña','','','','','','','','','','','','2','1'),(6,'raul','granda','morales','','','','','','','','','','','','2','1'),(7,'rosa','hernandez','jimenez','','','','','','','','','','','','2','1'),(8,'daniel','gonzalez','alejo','','','','','','','','','','1','123','1','1'),(9,'sagid','hernandez','lopez','','','','','','','','','','','','2','1'),(10,'','garcia','nava','','','','','','','','','','','','2','1');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
